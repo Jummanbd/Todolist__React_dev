@@ -20,6 +20,7 @@ form {
   justify-content: center;
   align-items: center;
 }
+
 form input,
 form button {
   padding: 1rem;
@@ -63,6 +64,9 @@ form button:hover {
 }
 .todo li {
   flex: 1;
+  width: 100%;
+  position: relative;
+  overflow-x: auto;
 }
 
 .trash-btn,
@@ -130,4 +134,14 @@ select {
   background: #ff6f47;
   cursor: pointer;
   pointer-events: none;
+}
+
+@media only screen and  (max-width:600px){
+ form{
+    flex-wrap: wrap;
+  }
+
+  form  .todo-input{
+    width: 70%;
+   }
 }
